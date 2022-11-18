@@ -7,7 +7,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 
 ---frr
 
-game.Players.LocalPlayer.PlayerScripts.SyncClient:Destroy()
+game.Players.LocalPlayer.PlayerScripts.SyncDisplay:Destroy()
 wait()
 game.Players.LocalPlayer.PlayerGui.EmoteUI:Destroy()
 
@@ -39,22 +39,23 @@ ScrollingFrame.Size = UDim2.new(1, 0, 1, 0)
 UIListLayout.Parent = ScrollingFrame
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
-TextButton.Parent = game.StarterGui.ScreenGui.LocalScript
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.Size = UDim2.new(1, 0, 0.100000001, 0)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
 
 -- Scripts:
 
 local function QTCGR_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
+	TextButton.Parent = ScreenGui:WaitForChild("LocalScript",5)
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.Size = UDim2.new(1, 0, 0.100000001, 0)
+	TextButton.Font = Enum.Font.SourceSans
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextScaled = true
+	TextButton.TextSize = 14.000
+	TextButton.TextWrapped = true
+
 	local Template = script.TextButton
-	
+
 	for i,v in pairs(game:GetService("ReplicatedFirst").LocalEmoteData:GetChildren()) do 
 		local Clone = Template:Clone()
 		Clone.Text = v.Name
