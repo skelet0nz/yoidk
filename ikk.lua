@@ -10,9 +10,6 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 game.Players.LocalPlayer.PlayerScripts.SyncClient:Destroy()
 game.Players.LocalPlayer.PlayerGui.EmoteUI:Destroy()
 
--- Gui to Lua
--- Version: 3.2
-
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
