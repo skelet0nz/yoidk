@@ -8,6 +8,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 ---frr
 
 game.Players.LocalPlayer.PlayerScripts.SyncClient:Destroy()
+wait()
 game.Players.LocalPlayer.PlayerGui.EmoteUI:Destroy()
 
 -- Instances:
