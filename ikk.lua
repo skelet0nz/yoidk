@@ -1,6 +1,13 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "fr bro";
+	Text = "you wont be able to sync so dont try tha!!";
+	Duration = 20;
+	Button1 = "waaaa";
+})
+
 ---frr
 
-game.Players.LocalPlayer.StarterPlayer.SyncClient:Destroy()
+game.Players.LocalPlayer.PlayerScripts.SyncClient:Destroy()
 game.Players.LocalPlayer.PlayerGui.EmoteUI:Destroy()
 
 -- Gui to Lua
