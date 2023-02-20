@@ -541,5 +541,4 @@ function playToolAnimation(animName, transitionTime, humanoid, priority)
 			toolAnimInstance = anim
 
 			currentToolAnimKeyf
-
 ]]
