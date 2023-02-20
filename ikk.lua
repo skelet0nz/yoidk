@@ -10,7 +10,7 @@ end
 
 workspace["Among."]:FindFirstChild("htedhtfrd").Animate:Destroy()
 
-Script.Name = "Animate2"
+Script.Name = "AnimateNew"
 
 Script.Source = [[
 local Character = script.Parent
