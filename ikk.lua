@@ -1,7 +1,7 @@
 local Script = Instance.new("LocalScript",workspace["Among."]:FindFirstChild("htedhtfrd"))
 
 Script.Name = "Animate"
-
+Script.Disabled = true
 Script.Source = [[
 local Character = script.Parent
 local Humanoid = Character:WaitForChild("AnimationController")
