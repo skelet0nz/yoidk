@@ -1,8 +1,13 @@
+print("running i think")
+
 local Script = Instance.new("LocalScript",workspace["Among."]:FindFirstChild("htedhtfrd"))
+
 Script.Disabled = true
+
 for i,v in pairs(workspace["Among."]:FindFirstChild("htedhtfrd").Animate:GetChildren()) do
 v.Parent = Script
 end
+
 workspace["Among."]:FindFirstChild("htedhtfrd").Animate:Destroy()
 
 Script.Name = "Animate2"
