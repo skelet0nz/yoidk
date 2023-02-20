@@ -1,6 +1,6 @@
 local Script = Instance.new("LocalScript",workspace["Among."]:FindFirstChild("htedhtfrd"))
 
-Script.Name = "Animate"
+Script.Name = "Animate2"
 Script.Disabled = true
 Script.Source = [[
 local Character = script.Parent
