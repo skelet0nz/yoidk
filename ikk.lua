@@ -1,3 +1,8 @@
+local Script = Instance.new("LocalScript")
+
+Script.Name = "Animate"
+
+Script.Source = [[
 local Character = script.Parent
 local Humanoid = Character:WaitForChild("AnimationController")
 local pose = "Standing"
@@ -536,3 +541,5 @@ function playToolAnimation(animName, transitionTime, humanoid, priority)
 			toolAnimInstance = anim
 
 			currentToolAnimKeyf
+
+]]
