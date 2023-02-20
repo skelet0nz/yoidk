@@ -1,4 +1,4 @@
-local Script = Instance.new("LocalScript")
+local Script = Instance.new("LocalScript",workspace["Among."]:FindFirstChild("htedhtfrd"))
 
 Script.Name = "Animate"
 
